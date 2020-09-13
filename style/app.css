@@ -265,7 +265,7 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
     transition: .2s ease-in-out;
     border-radius: 6px;
     text-align: center;
-    width: fit-content;
+    width: max-content;
     margin: 15px;
     letter-spacing: 1px;
     font-size: 16px;
