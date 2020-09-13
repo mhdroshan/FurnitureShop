@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/JiSlider.css">
+    <!--  -->
+
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light ">
+        
+          <a class="navbar-brand" href="#">
+            <img class="logo horizontal-logo" src="./src/logo.png" width="200px" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+              <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+              <path class="line middle" d="m 70,50 h -40" />
+              <path class="line bottom"
+                d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SHOP
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OUR STORY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        
+      </nav>
+      <div class="bottomLine"></div>
+    </div>
+
+    <!-- carousel -->
+    <div class="carouselHolder container">
+        <div id="JiSlider" class="jislider">
+			<ul>
+				<li>
+					<div class="sliderImage" style="background-image: url(./src/1.jpg);"></div>
+				</li>
+				<li>
+					<div class="sliderImage" style="background-image: url(./src/2.jpg);"></div>
+				</li>
+				<li>
+					<div class="sliderImage" style="background-image: url(./src/3.jpg);"></div>
+				</li>
+				<li>
+					<div class="sliderImage" style="background-image: url(./src/4.jpg);"></div>
+				</li>
+			</ul>
+		</div>
+    </div>
+    <!--  -->
+
+    <!-- collections -->
+    <div class="container collectionHolder">
+      <div class="collectionheader">Collections</div>
+        <div class="row">
+            <div class="col-sm-3 p-2">
+              <figure class="snip1321">
+                <div class="collectionImage" ></div>
+                <figcaption><i class="ion-upload"></i>
+                  <h4>TITLE</h4>
+                  <h2>Subtitile</h2>
+                </figcaption><a href="#projectspage"></a>
+              </figure>
+              <div class="imageCaption">Tables</div>
+            </div>
+            <div class="col-sm-3 p-2">
+              <figure class="snip1321">
+                <div class="collectionImage" ></div>
+                <figcaption><i class="ion-upload"></i>
+                  <h4>TITLE</h4>
+                  <h2>Subtitile</h2>
+                </figcaption><a href="#projectspage"></a>
+              </figure>
+              <div class="imageCaption">chair</div>
+            </div>
+            <div class="col-sm-3 p-2">
+              <figure class="snip1321">
+                <div class="collectionImage" ></div>
+                <figcaption><i class="ion-upload"></i>
+                  <h4>TITLE</h4>
+                  <h2>Subtitile</h2>
+                </figcaption><a href="#projectspage"></a>
+              </figure>
+              <div class="imageCaption">Tables</div>
+            </div>
+            <div class="col-sm-3 p-2">
+              <figure class="snip1321">
+                <div class="collectionImage" ></div>
+                <figcaption><i class="ion-upload"></i>
+                  <h4>TITLE</h4>
+                  <h2>Subtitile</h2>
+                </figcaption><a href="#projectspage"></a>
+              </figure>
+              <div class="imageCaption">chair</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!--  -->
+    <!-- aboutus -->
+    <div class="aboutHolder">
+      <div class="container" style="padding: 40px 0;">
+        <div class="row">
+          <div class="col-sm-6 p-0">
+            <div class="aboutImage"></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="aboutContent">
+              <h2>Why us?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+              <p>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"style="padding: 40px 0;">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="aboutContent">
+              <h2>Why us?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+              <p>aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+              <div class="aboutButton">Shop now</div>
+            </div>
+          </div>
+          <div class="col-sm-6 p-0">
+            <div class="aboutImage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- subscribe -->
+    <div class="subHolder container">
+      <div class="row" >
+
+        <div class="col-sm-6" style="background-color: #00bcd430;">
+          <div class="subContent">
+            <h2>Stay updated!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="col-sm-6" style="background-color: #00bcd44f;">
+          <div class="subContent">
+            <input type="email" name="" id="" placeholder="Your email">
+            <div class="aboutButton">Subscribe</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!--  -->
+
+<!-- footer -->
+<div class="footerholder">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-3 footerData">
+      <h5>Links</h5>
+      <a href="#">Search</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms and service</a>
+      
+    </div>
+    <div class="col-sm-3 footerData">
+      <h5>About us</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Ut enim</p>
+      
+    </div>
+    <div class="col-sm-3 footerData">
+      <h5>Follow us</h5>
+
+      
+    </div>
+    <div class="col-sm-3 footerData">
+      <h5>Contact us</h5>
+      <a href="mailto:samplemail@gmail.com">sample@contact.in</a>
+      <a href="tel:+9866668954">+91 9866668954</a>
+      
+
+      
+    </div>
+  </div>
+</div>
+</div>
+<!--  -->
+
+
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/JiSlider.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script>
+    $(window).load(function () {
+        $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: true,time:800,stay:3000,easing: 'ease-in-out',}).addClass('ff')
+    })
+</script>
+
+     
+</body>
+
+</html>
