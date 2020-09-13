@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FurnitureShop</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -233,14 +233,14 @@
     <!-- <script src="js/jquery.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/JiSlider.js"></script>
+    <script>
+      $(window).load(function () {
+          $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: true,time:800,stay:3000,easing: 'ease-in-out',}).addClass('ff')
+      })
+  </script>
+    <script src="js/app.js"></script>
   <!-- <script src="js/jquery.min.js"></script> -->
-  <script>
-    $(window).load(function () {
-        $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: true,time:800,stay:3000,easing: 'ease-in-out',}).addClass('ff')
-    })
-</script>
 
      
 </body>
