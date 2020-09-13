@@ -241,12 +241,13 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 .aboutHolder{
     margin: 5% auto;
 }
+.abtImageHolder{
+    padding: 5px;
+}
 .aboutImage{
     background-image: url(../src/4.jpg);
     height: 450px;
     background-size: cover;
-   
-
 }
 .aboutContent{
     padding: 20px;
@@ -276,6 +277,7 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 color: #1f1f1f ;
 background-color: white;
 }
+
 
 /* subscribe */
 .subHolder{
