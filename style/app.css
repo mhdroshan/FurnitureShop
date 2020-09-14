@@ -115,7 +115,7 @@ margin: 40px auto;
 }
 
 .collectionImage{
-    height: 260px;
+    height: 320px;
     background-size: cover;
     
     background-position: center;
@@ -129,7 +129,7 @@ figure.snip1321 {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
-   max-width: 280px;
+   max-width: 320px;
    width: 100%;
     color: white;
     text-align: center;
