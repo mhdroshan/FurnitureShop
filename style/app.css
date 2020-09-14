@@ -120,7 +120,7 @@ margin: 40px auto;
     
     background-position: center;
    
-    background-image: url(../src/3.jpg);
+    
 }
 
 
@@ -129,7 +129,8 @@ figure.snip1321 {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
-    width: 100%;
+   max-width: 280px;
+   width: 100%;
     color: white;
     text-align: center;
     -webkit-perspective: 50em;
@@ -233,8 +234,9 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 }
 .imageCaption{
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* about */
@@ -258,7 +260,7 @@ figure.snip1321:hover:after, figure.snip1321.hover:after {
 }
 
 .aboutContent p{
-    font-size: 23px;
+    font-size: 21px;
 }
 .aboutContent h2{
     margin-bottom: 15px;
@@ -290,7 +292,7 @@ background-color: white;
 .subContent{
     padding: 10% 12%;
 }
-.subContent h2{
+.subContent h3{
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -304,7 +306,9 @@ background-color: white;
 .subContent input:focus{
     outline: none;
 }
-
+.subContent p{
+    font-size: 15px;
+}
 /* footer */
 .footerholder{
     background-color: #414141;
@@ -316,10 +320,17 @@ background-color: white;
 }
 .footerData a{
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     display: block;
 }
 .footerData h5{
     font-weight: 600;
     margin-bottom: 10px;
+}
+.footerData i{
+    margin: 4px;
+    font-size: 20px;
+}
+.footerData p{
+    font-size: 14px;
 }
