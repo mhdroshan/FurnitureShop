@@ -125,11 +125,93 @@ margin: 40px auto;
 
 
 /* collection hover effect */
-figure.snip1321 {
-    position: relative;
+
+
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+
+figure.effect-marley figcaption {
+	text-align: right;
+}
+
+figure.effect-marley h4,
+figure.effect-marley .viewButton {
+	position: absolute;
+	right: 15px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+figure.effect-marley .viewButton {
+	bottom: 30px;
+    border: .5px solid white;
+    padding: 8px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    backdrop-filter: blur(6px);
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    width: fit-content;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+   
+}
+figure.effect-marley .viewButton:hover {
+background-color: white;
+
+color: black;
+}
+figure.effect-marley h4 {
+    top: 10px;
+    font-size: 22px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h4::after {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 80%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h4::after,
+figure.effect-marley .viewButton {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: all 0.35s;
+}
+
+figure.effect-marley:hover h4::after,
+figure.effect-marley:hover .viewButton {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-marley:hover img{
+    transform: scale(1.05);
+    filter: brightness(0.6);
+}
+
+.grid figure {
+	position: relative;
     overflow: hidden;
     margin: 10px auto;
-   max-width: 300px;
+   max-width: 330px;
    width: 100%;
     color: white;
     text-align: center;
@@ -137,107 +219,40 @@ figure.snip1321 {
     perspective: 50em;
 }
 
-figure.snip1321 * {
-    -webkit-box-sizing: padding-box;
-    box-sizing: padding-box;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-figure.snip1321 img {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-figure.snip1321 figcaption {
-    top: 42%;
-    left: 20px;
-    right: 20px;
-    position: absolute;
-    transition: 0.3s ease-in-out;
-   
-    z-index: 1;
-}
-
-figure.snip1321 h2, figure.snip1321 h4 {
-    margin: 0;
-}
-
-figure.snip1321 h2 {
-    font-weight: 400;
-    font-size: 18px;
-    opacity: 0;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-figure.snip1321 h4 {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 22px;
-    opacity: 0;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-}
-
-figure.snip1321 i {
-    font-size: 32px;
-}
-
-figure.snip1321:after {
-    background-color: #00000096;
-    position: absolute;
-    backdrop-filter: blur(5px);
-    content: "";
+.grid figure img {
+    position: relative;
     display: block;
-    top: 0px;
-    color: white;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    -webkit-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
-    opacity: 0;
+    min-height: 100%;
+    height: 300px;
+    transition: 0.35s ease-in-out; 
+    transform-origin: center;
+    min-width: 330px;
+    filter: brightness(0.8)
 }
 
-figure.snip1321 a {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: 1;
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-figure.snip1321:hover figcaption h4, figure.snip1321.hover figcaption h4 {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-    opacity: 1;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
 }
 
-figure.snip1321:hover figcaption h2, figure.snip1321.hover figcaption h2 {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-    opacity: 1;
-    -webkit-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-figure.snip1321:hover:after, figure.snip1321.hover:after {
-    
-    /* width: 10px; */
-    opacity: 1;
-    -webkit-transition-delay: .1s;
-    transition-delay: .1s;
-}
-.imageCaption{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
 /* about */
 .aboutHolder{
@@ -337,3 +352,4 @@ background-color: white;
 .footerData p{
     font-size: 14px;
 }
+
