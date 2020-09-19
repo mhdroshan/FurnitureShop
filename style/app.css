@@ -363,11 +363,11 @@ background-color: white;
 
 .productsTitle h2{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
 
 }
 .productsTitle p{
-    font-size: 15px;
+    font-size: 13px;
 }
 .productsTitle h2::before,
 .productsTitle h2::after {
@@ -450,8 +450,10 @@ figure.effect-marley:hover .productImage{
 .productDetails{
     position: relative;
     padding: 2px;
-    margin: 5px;
+    margin: 5px auto;
+    text-align: center;
     height: 57px;
+    max-width: 330px
 
 }
 .productDetails h6{
@@ -497,4 +499,13 @@ figure.effect-marley:hover .productImage{
 .modelContent{
     margin: 20px 5px;
     margin-top: 30px;
+}
+
+.closeButton{
+    /* position: re; */
+    top: 0;
+    right: 0;
+    margin: 8px 20px;
+    font-size: 37px;
+    font-weight: 600;
 }
