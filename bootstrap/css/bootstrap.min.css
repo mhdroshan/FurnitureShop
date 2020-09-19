@@ -5830,7 +5830,7 @@ a.close.disabled {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1rem
+    /* padding: 1rem */
 }
 
 .modal-footer {
@@ -5862,7 +5862,7 @@ a.close.disabled {
 
 @media (min-width:576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 750px;
         margin: 1.75rem auto
     }
     .modal-dialog-scrollable {
