@@ -1,37 +1,37 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 /* navbar */
+
 .navbar .nav-item:not(:last-child) {
     margin-right: 35px;
-  }
-  
-  .dropdown-toggle::after {
-     transition: transform 0.15s linear; 
-  }
-  
-  .show.dropdown .dropdown-toggle::after {
-    transform: translateY(3px);
-  }
-  
-  .dropdown-menu {
-    margin-top: 0;
-  }
+}
 
-  .bottomLine{
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.bottomLine {
     margin-top: 2px;
     margin-bottom: 20px;
     border: 0;
     border-bottom: 1px solid #dddddd;
-  }
-  .nav-link{
-    font-weight: 600;
-  }
+}
 
-  /* hambur */
+.nav-link {
+    font-weight: 600;
+}
+
+/* hambur */
 
 .ham {
     cursor: pointer;
@@ -84,136 +84,136 @@ body{
     stroke-dashoffset: -83px;
 }
 
-
-
 /* carousel */
+
 #JiSlider {
     width: 100%;
     height: 100%;
 }
-.carouselHolder{
+
+.carouselHolder {
     height: 95vh;
 }
-.sliderImage{
+
+.sliderImage {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
-
 
 /* COLLECTIONS */
-.collectionHolder{
-margin: 8% auto;
+
+.collectionHolder {
+    margin: 8% auto;
 }
-.collectionheader{
+
+.collectionheader {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 10px 0px 20px;
     padding: 10px;
 }
 
-.collectionImage{
+.collectionImage {
     height: 300px;
     background-size: cover;
-    
     background-position: center;
-   
-    
 }
 
+.diffHeight {
+    height: 250px !important;
+}
 
 /* collection hover effect */
 
-
 /*---------------*/
+
 /***** Marley *****/
+
 /*---------------*/
 
 figure.effect-marley figcaption {
-	text-align: right;
+    text-align: right;
 }
 
-figure.effect-marley h4,
-figure.effect-marley .viewButton {
-	position: absolute;
-	right: 15px;
-	left: 30px;
-	
+figure.effect-marley h4, figure.effect-marley .viewButton {
+    position: absolute;
+    right: 15px;
+    left: 30px;
 }
 
-
 figure.effect-marley .viewButton {
-	bottom: 30px;
+    bottom: 30px;
     border: .5px solid white;
     padding: 8px 13px;
     border-radius: 4px;
     font-size: 14px;
     backdrop-filter: blur(6px);
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     width: max-content;
     cursor: pointer;
     transition: 1s ease-in-out;
-   
 }
-figure.effect-marley .viewButton:hover {
-background-color: white;
 
-color: black;
+figure.effect-marley .viewButton:hover {
+    background-color: white;
+    color: black;
 }
+
 figure.effect-marley h4 {
-    top: 10px;
+    top: 20px;
     font-size: 22px;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
 }
 
 figure.effect-marley:hover h4 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 figure.effect-marley h4::after {
-	position: absolute;
-	top: 100%;
-	right: 0;
-	width: 80%;
-	height: 2px;
-	background: #fff;
-	content: '';
-	-webkit-transform: translate3d(0,40px,0);
-	transform: translate3d(0,40px,0);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
 }
 
-figure.effect-marley h4::after,
-figure.effect-marley .viewButton {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: all 0.35s;
+figure.effect-marley h4::after, figure.effect-marley .viewButton {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: all 0.35s;
 }
 
-figure.effect-marley:hover h4::after,
-figure.effect-marley:hover .viewButton {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+figure.effect-marley:hover h4::after, figure.effect-marley:hover .viewButton {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
-figure.effect-marley:hover .collImage{
+
+figure.effect-marley:hover .collImage {
     transform: scale(1.05);
     filter: brightness(0.6);
 }
 
 .grid figure {
-	position: relative;
+    position: relative;
     overflow: hidden;
     margin: 10px auto;
-   max-width: 330px;
-   width: 100%;
+    max-width: 400px;
+    width: 100%;
     color: white;
+    height: 100%;
+    padding: 10px 0;
     text-align: center;
     -webkit-perspective: 50em;
     perspective: 50em;
@@ -224,63 +224,67 @@ figure.effect-marley:hover .collImage{
     display: block;
     min-height: 100%;
     height: 300px;
-    transition: 0.35s ease-in-out; 
+    transition: 0.35s ease-in-out;
     transform-origin: center;
-    min-width: 330px;
+    min-width: 100%;
     filter: brightness(0.8)
 }
 
 .grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
+.grid figure figcaption::before, .grid figure figcaption::after {
+    pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.grid figure figcaption, .grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
 
 /* about */
-.aboutHolder{
+
+.aboutHolder {
     margin: 5% auto;
 }
-.abtImageHolder{
+
+.abtImageHolder {
     padding: 5px;
 }
-.aboutImage{
+
+.aboutImage {
     background-image: url(../src/4.jpg);
     height: 450px;
     transition: .15s ease-in-out;
     background-size: cover;
 }
-.aboutImage:hover{
-   filter: brightness(0.7);
+
+.aboutImage:hover {
+    filter: brightness(0.7);
 }
-.aboutContent{
+
+.aboutContent {
     padding: 20px;
 }
 
-.aboutContent p{
+.aboutContent p {
     font-size: 21px;
 }
-.aboutContent h2{
+
+.aboutContent h2 {
     margin-bottom: 15px;
 }
-.aboutButton{
+
+.aboutButton {
     padding: 9px 23px;
     color: white;
     background-color: #1f1f1f;
@@ -294,83 +298,96 @@ figure.effect-marley:hover .collImage{
     text-transform: uppercase;
     border: 1.5px solid #1f1f1f;
 }
-.aboutButton:hover{
-color: #1f1f1f ;
-background-color: white;
-}
 
+.aboutButton:hover {
+    color: #1f1f1f;
+    background-color: white;
+}
 
 /* subscribe */
-.subHolder{
+
+.subHolder {
     margin: 4% auto;
 }
-.subContent{
+
+.subContent {
     padding: 10% 12%;
 }
-.subContent h3{
+
+.subContent h3 {
     margin-bottom: 15px;
     font-weight: 600;
 }
-.subContent input{
+
+.subContent input {
     width: 89%;
     margin: 0 10px;
     border-radius: 4px;
     padding: 8px;
     border: none;
 }
-.subContent input:focus{
+
+.subContent input:focus {
     outline: none;
 }
-.subContent p{
+
+.subContent p {
     font-size: 15px;
 }
+
 /* footer */
-.footerholder{
+
+.footerholder {
     background-color: #414141;
     color: white;
     padding: 20px 10px;
     margin: 2px 0;
     min-height: 290px;
 }
-.footerData{
+
+.footerData {
     margin: 40px auto;
 }
-.footerData a{
+
+.footerData a {
     color: white;
     font-size: 14px;
     display: block;
 }
-.footerData h5{
+
+.footerData h5 {
     font-weight: 600;
     margin-bottom: 10px;
 }
-.footerData i{
+
+.footerData i {
     margin: 4px;
     font-size: 20px;
     cursor: pointer;
 }
-.footerData p{
+
+.footerData p {
     font-size: 14px;
 }
 
-
 /* shop page */
-.productsTitle{
+
+.productsTitle {
     text-align: center;
     padding: 20px 10px;
     margin: 3% auto;
 }
 
-.productsTitle h2{
+.productsTitle h2 {
     font-weight: 600;
     font-size: 35px;
-
 }
-.productsTitle p{
+
+.productsTitle p {
     font-size: 13px;
 }
-.productsTitle h2::before,
-.productsTitle h2::after {
+
+.productsTitle h2::before, .productsTitle h2::after {
     display: inline-block;
     content: "";
     border-top: 1.5px solid black;
@@ -381,51 +398,45 @@ background-color: white;
 
 /* products */
 
-
 figure.effect-marley .viewProduct {
     position: absolute;
     left: 50%;
     margin-left: -70.5px;
     text-align: center;
-	
 }
 
-
 figure.effect-marley .viewProduct {
-	bottom: 30px;
+    bottom: 30px;
     /* border: .5px solid rgb(46, 45, 45); */
     padding: 8px 13px;
     border-radius: 4px;
     font-size: 14px;
     background-color: rgb(46, 45, 45);
-    
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     width: 140px;
     cursor: pointer;
-    
-   
 }
-figure.effect-marley .viewProduct:hover {
-background-color: white;
 
-color: black;
+figure.effect-marley .viewProduct:hover {
+    background-color: white;
+    color: black;
 }
 
 figure.effect-marley .viewProduct {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: all 0.35s ease-in-out;
     transition-delay: .15;
 }
 
 figure.effect-marley:hover .viewProduct {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
-figure.effect-marley:hover .productImage{
+figure.effect-marley:hover .productImage {
     transform: scale(1.05);
     filter: brightness(0.6);
 }
@@ -435,35 +446,35 @@ figure.effect-marley:hover .productImage{
     display: block;
     min-height: 100%;
     height: 300px;
-    transition: 0.35s ease-in-out; 
+    transition: 0.35s ease-in-out;
     transform-origin: center;
     min-width: 330px;
     /* filter: brightness(0.8) */
 }
 
-figure.effect-marley:hover .productImage{
+figure.effect-marley:hover .productImage {
     transform: scale(1.05);
     filter: grayscale(1);
 }
 
-
-.productDetails{
+.productDetails {
     position: relative;
     padding: 2px;
     margin: 5px auto;
     text-align: center;
     height: 57px;
     max-width: 330px
-
 }
-.productDetails h6{
+
+.productDetails h6 {
     position: absolute;
     left: 5px;
     font-size: 17px;
     top: 5px;
     font-weight: 600;
 }
-.productDetails p{
+
+.productDetails p {
     position: absolute;
     left: 5px;
     bottom: 5px;
@@ -471,7 +482,8 @@ figure.effect-marley:hover .productImage{
     font-size: 13px;
     padding: 2px;
 }
-.productDetails .proPrice{
+
+.productDetails .proPrice {
     position: absolute;
     right: 5px;
     font-size: 14px;
@@ -479,7 +491,8 @@ figure.effect-marley:hover .productImage{
 }
 
 /* Model */
-.modelImage{
+
+.modelImage {
     background-image: url(../src/3.jpg);
     height: 400px;
     width: 100%;
@@ -489,19 +502,22 @@ figure.effect-marley:hover .productImage{
     background-position: center;
     background-repeat: no-repeat;
 }
-.modelContent p{
+
+.modelContent p {
     padding: 20px;
 }
-.modelContent h4{
+
+.modelContent h4 {
     font-weight: 600;
     margin: 10px 20px;
 }
-.modelContent{
+
+.modelContent {
     margin: 20px 5px;
     margin-top: 30px;
 }
 
-.closeButton{
+.closeButton {
     /* position: re; */
     top: 0;
     right: 0;
