@@ -555,19 +555,19 @@ pre code {
 
 @media (min-width:768px) {
     .container, .container-md, .container-sm {
-        max-width: 750px
+        max-width: 720px
     }
 }
 
 @media (min-width:992px) {
     .container, .container-lg, .container-md, .container-sm {
-        max-width: 990px
+        max-width: 960px
     }
 }
 
 @media (min-width:1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1240px
+        max-width: 1140px
     }
 }
 
