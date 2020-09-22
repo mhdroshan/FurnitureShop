@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+  <div class="navbarSticky">
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light ">
@@ -67,6 +67,7 @@
     </nav>
     <div class="bottomLine"></div>
   </div>
+</div>
 
   <!-- products -->
 
@@ -76,7 +77,7 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row productRow">
       <div class="col-md-3 grid">
         <figure class="effect-marley"  style="height: auto;">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
@@ -89,7 +90,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -104,7 +105,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -119,7 +120,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -134,14 +135,14 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
     </div>
 
 
     <!-- products row 2 -->
-    <div class="row">
+    <div class="row productRow">
       <div class="col-md-3 grid">
         <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
@@ -154,7 +155,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -169,7 +170,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -184,7 +185,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
       <div class="col-md-3 grid">
@@ -199,7 +200,7 @@
         <div class="productDetails">
           <h6>Product name</h6>
           <p>Type</p>
-          <div class="proPrice">Rs 30000</div>
+          <div class="proPrice">₹ 30000</div>
         </div>
       </div>
     </div>
@@ -273,16 +274,19 @@
       $('#testimonial').owlCarousel({
         loop: true,
         autoplay:true,
-        autoplayTimeout:2000,
-        nav:false,
+        dotsClass: 'owl-dotsCustom2 owl-dots',
+        dots:true,
+        autoplayTimeout:3500,
+        
         margin: 10,
-        dots:false,
+        
 
         
         responsiveClass: true,
         responsive: {
           0: {
             items: 1,
+            
             
           },
           600: {

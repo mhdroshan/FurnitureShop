@@ -119,10 +119,16 @@ body {
 }
 .owl-dotsCustom{
     position: absolute;
-    bottom: 9px;
+    bottom: 20px;
     left: 50%;
     margin-left: -50px;
     width: 100px;
+}
+.owl-dotsCustom2{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    width: auto;
 }
 
 /* hambur */
@@ -322,6 +328,7 @@ figure.effect-marley:hover .collImage {
     width: 100%;
     color: white;
     height: 100%;
+    margin-bottom: 0;
     padding: 10px 0;
     text-align: center;
     -webkit-perspective: 50em;
@@ -574,21 +581,22 @@ figure.effect-marley:hover .productImage {
     margin: 5px auto;
     text-align: center;
     height: 57px;
+    margin-top: 0;
     max-width: 330px
 }
 
 .productDetails h6 {
     position: absolute;
     left: 5px;
-    font-size: 17px;
+    font-size: 15px;
     top: 5px;
     font-weight: 600;
 }
 
 .productDetails p {
     position: absolute;
-    left: 5px;
-    bottom: 5px;
+    left: 6px;
+    top: 25px;
     margin-bottom: 0;
     font-size: 13px;
     padding: 2px;
@@ -600,7 +608,9 @@ figure.effect-marley:hover .productImage {
     font-size: 14px;
     top: 5px;
 }
-
+.productRow{
+    margin: 2% auto;
+}
 /* Model */
 
 .modelImage {
