@@ -9,7 +9,9 @@
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/app.css">
-    <link rel="stylesheet" href="style/JiSlider.css">
+    
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     
     <!--  -->
 
@@ -72,23 +74,22 @@
     </div>
   </div>
     <!-- carousel -->
-    <div class="carouselHolder container-fluid">
-        <div id="JiSlider" class="jislider">
-			<ul>
-				<li>
-					<div class="sliderImage" style="background-image: url(./src/1.jpg);"></div>
-				</li>
-				<li>
-					<div class="sliderImage" style="background-image: url(./src/2.jpg);"></div>
-				</li>
-				<li>
-					<div class="sliderImage" style="background-image: url(./src/3.jpg);"></div>
-				</li>
-				<li>
-					<div class="sliderImage" style="background-image: url(./src/4.jpg);"></div>
-				</li>
-			</ul>
-		</div>
+    <div class="carouselHolder">
+      <div id="homeslider" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="sliderImage" style="background-image: url(./src/1.jpg);"></div>
+        </div>
+        <div class="item">
+          <div class="sliderImage" style="background-image: url(./src/2.jpg);"></div>
+        </div>
+        <div class="item">
+          <div class="sliderImage" style="background-image: url(./src/3.jpg);"></div>
+        </div>
+        <div class="item">
+          <div class="sliderImage" style="background-image: url(./src/4.jpg);"></div>
+        </div>
+      </div>
+        
     </div>
     <!--  -->
 
@@ -170,24 +171,24 @@
         <div class="collectionheader">
           <h3>Featured products</h3>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 p-2 fetimgHolder">
+        <div id="featured" class="owl-carousel owl-theme featured">
+        
+            <div class="fetimgHolder item">
               <div class="feturedImage"></div>
               <p>Product 1</p>
               
             </div>
-            <div class="col-md-4 p-2 fetimgHolder">
+            <div class=" fetimgHolder item">
               <div class="feturedImage"></div>
               <p>Product 2</p>
             </div>
-            <div class="col-md-4 p-2 fetimgHolder">
+            <div class=" fetimgHolder item">
               <div class="feturedImage"></div>
               <p>Product 3</p>
             </div>
-          </div>
-        </div>
+          
       </div>
+    </div>
 
 
     <!--  -->
@@ -223,7 +224,148 @@
         </div>
       </div>
     </div> -->
-    
+    <!-- testimonials -->
+<div class="container testimialHolder">
+  <div class="collectionheader">
+    <h3>Testimonials</h3>
+  </div>
+    <div id="testimonial" class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimonial-card">
+          <div class="text">Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste,  Et, esta ah <i class="fa fa-quote-right quote" aria-hidden="true"></i>
+</div>
+          <div class="footer">
+            <div class="image">
+            </div>
+             <h3 class='person'>Jane Doe</h3>
+             </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 
     <!-- subscribe -->
     <div class="subHolder container">
@@ -290,18 +432,102 @@
     <!-- scripts -->
     <!-- <script src="js/jquery.min.js"></script> -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
   
 
-    <script src="js/JiSlider.js"></script>
-    <script>
-      $(window).load(function () {
-          $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false,time:800,stay:3000,easing: 'ease-in-out',}).addClass('ff')
+   
+   <script>
+    $(document).ready(function() {
+      $('#testimonial').owlCarousel({
+        loop: true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        navClass: ['jislider__right-arrow','jislider__left-arrow'],
+        margin: 50,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 2,
+            nav: true,
+            
+          }
+        }
       })
+    })
   </script>
+
+<script>
+  $(document).ready(function() {
+    $('#featured').owlCarousel({
+      loop: true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      navClass: ['jislider__right-arrow','jislider__left-arrow'],
+      margin: 50,
+      
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          
+        }
+      }
+    })
+  })
+</script>
+
+     <script>
+      $(document).ready(function() {
+        $('#homeslider').owlCarousel({
+          loop: true,
+          autoplay:true,
+          autoplayTimeout:4000,
+          margin: 10,
+          navClass: ['jislider__right-arrow','jislider__left-arrow'],
+          dotsClass:'owl-dotsCustom owl-dots',
+          
+         
+          responsiveClass: true,
+          responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            
+          }
+        }
+        })
+      })
+    </script>
+ 
  
     <script src="js/app.js"></script>
 
