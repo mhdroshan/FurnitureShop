@@ -405,6 +405,7 @@ figure.effect-marley:hover .collImage {
     letter-spacing: 1px;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
     border: 1.5px solid #1f1f1f;
 }
 
@@ -558,12 +559,13 @@ figure.effect-marley:hover .productImage {
     transition: 0.35s ease-in-out;
     transform-origin: center;
     min-width: 330px;
+    width: 100%;
     /* filter: brightness(0.8) */
 }
 
 figure.effect-marley:hover .productImage {
     transform: scale(1.05);
-    filter: grayscale(1);
+    filter: contrast(1.5);
 }
 
 .productDetails {
@@ -604,7 +606,7 @@ figure.effect-marley:hover .productImage {
 .modelImage {
     background-image: url(../src/3.jpg);
     height: 400px;
-    width: 100%;
+    width: 92%;
     background-size: cover;
     margin: 0 auto;
     max-width: 450px;

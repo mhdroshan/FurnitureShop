@@ -9,6 +9,8 @@
   <!-- css -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style/app.css">
+  <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
 
   <!-- googlefonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -26,7 +28,7 @@
     <nav class="navbar navbar-expand-md navbar-light ">
 
       <a class="navbar-brand" href="#">
-        <img class="logo horizontal-logo" src="./src/logo.png" width="200px" alt="logo">
+        <img class="logo" src="./src/logoLarge.jpg" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +78,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley"  style="height: auto;">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -91,7 +93,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto;">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -106,7 +108,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -121,7 +123,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
             <!-- <h4>Dining</h4> -->
@@ -141,7 +143,7 @@
     <!-- products row 2 -->
     <div class="row">
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -156,7 +158,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -171,7 +173,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
 
@@ -186,7 +188,7 @@
         </div>
       </div>
       <div class="col-md-3 grid">
-        <figure class="effect-marley">
+        <figure class="effect-marley" style="height: auto; ">
           <img class="productImage" src="./src/1.jpg" alt="img11" />
           <figcaption>
             <!-- <h4>Dining</h4> -->
@@ -222,7 +224,20 @@
           <div class="modelContainer">
             <div class="row">
               <div class="col-sm-6 p-0">
+                <div id="testimonial" class="owl-carousel owl-theme">
+                  <div class="item">
                 <div class="modelImage"></div>
+              </div>
+                  <div class="item">
+                <div class="modelImage"></div>
+              </div>
+                  <div class="item">
+                <div class="modelImage"></div>
+              </div>
+                  <div class="item">
+                <div class="modelImage"></div>
+              </div>
+            </div>
               </div>
               <div class="col-sm-6 p-0">
                 <div class="modelContent">
@@ -230,6 +245,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   </p>
+                  <div class="aboutButton">Buy now</div>
                 </div>
               </div>
             </div>
@@ -244,12 +260,44 @@
 
 
 
-
+  
   <!-- scripts -->
   <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 
+
+  <script>
+    $(document).ready(function() {
+      $('#testimonial').owlCarousel({
+        loop: true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        nav:false,
+        margin: 10,
+        dots:false,
+
+        
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            
+          },
+          600: {
+            items: 1,
+            
+          },
+          1000: {
+            items: 1,
+            
+            
+          }
+        }
+      })
+    })
+  </script>
 
 </body>
 
