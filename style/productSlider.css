@@ -65,21 +65,25 @@
   z-index: 1;
   top: 167px;
   left: -20px;
-  width: 40px;
+  color: white;
   height: 50px;
+  font-size: 30px;
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: left ease 0.25s;
   transition: left ease 0.25s;
-  
-  background: url(../src/arrowLeft.png) top left;
+  /* background-size: 70%;
+    background-repeat: no-repeat;
+  background: url(../src/arrowLeft.png) top left; */
 }
 .productImageholder .all .slider .left:hover {
   visibility: visible;
   opacity: 1;
   left: 20px;
-  background: url(../src/arrowLeft.png) top left;
+  /* background: url(../src/arrowLeft.png) top left;
+  background-size: 70%;
+    background-repeat: no-repeat; */
   
 }
 .productImageholder .all .slider .left.nonl {
@@ -93,19 +97,26 @@
   z-index: 1;
   top: 167px;
   right: -20px;
-  width: 50px;
+  font-size: 30px;
+  color: white;
+ 
   height: 50px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: right ease 0.25s;
   transition: right ease 0.25s;
-  background: url(../src/arrowRight.png) top left;
+  /* background: url(../src/arrowRight.png) top left;
+  background-size: 70%;
+  background-repeat: no-repeat; */
+ 
   }
 .productImageholder .all .slider .right:hover {
   visibility: visible;
   opacity: 1;
   right: 20px;
-  background: url(../src/arrowRight.png) top left;
+  /* background: url(../src/arrowRight.png) top left;
+  background-size: 70%;
+    background-repeat: no-repeat; */
   
 }
 .productImageholder .all .slider .right.nonr {
@@ -167,6 +178,7 @@
   height: 95px;
   background: no-repeat rgba(204, 46, 56, 0.85) url(../src/arrowLeft.png) center center;
   left: -40px;
+  
 }
 .productImageholder .all .slider-two .left-t:hover {
   visibility: visible;
