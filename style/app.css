@@ -23,9 +23,14 @@ body {
 .navbarSticky {
     position: sticky;
     top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
     z-index: 3;
     background: white;
     width: 100%;
+    font-size: 16px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    
 }
 
 .bottomLine {
@@ -214,9 +219,11 @@ body {
 .collectionheader h3 {
     font-size: 40px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     margin: 10px 10px 25px 10px;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    
 }
 
 .collectionheader h3:after, .collectionheader h3:before {
@@ -343,7 +350,9 @@ figure.effect-marley:hover .collImage {
     transition: 0.35s ease-in-out;
     transform-origin: center;
     min-width: 100%;
-    filter: brightness(0.8)
+    font-weight: 600;
+    filter: brightness(0.8);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .grid figure figcaption {
@@ -414,6 +423,7 @@ figure.effect-marley:hover .collImage {
     text-transform: uppercase;
     cursor: pointer;
     border: 1.5px solid #1f1f1f;
+    font-family: 'Lato', sans-serif;
 }
 
 .aboutButton:hover {
@@ -475,6 +485,7 @@ figure.effect-marley:hover .collImage {
 .footerData h5 {
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footerData i {
@@ -520,6 +531,7 @@ figure.effect-marley .viewProduct {
     left: 50%;
     margin-left: -70.5px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 figure.effect-marley .viewProduct {
@@ -607,6 +619,7 @@ figure.effect-marley:hover .productImage {
     right: 5px;
     font-size: 14px;
     top: 5px;
+    font-family: 'Lato', sans-serif;
 }
 .productRow{
     margin: 2% auto;
@@ -626,6 +639,7 @@ figure.effect-marley:hover .productImage {
 
 .modelContent p {
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .modelContent h4 {
@@ -665,7 +679,7 @@ figure.effect-marley:hover .productImage {
     margin: 20px auto;
     background-image: url(../src/others.jpg);
     width: 100%;
-    transition: .7s ease;
+    transition: .3s ease;
 }
 .feturedImage:hover{
     transform: scale(1.04);
@@ -674,7 +688,8 @@ figure.effect-marley:hover .productImage {
 
 .fetimgHolder p{
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 .featured :hover .jislider__left-arrow {
     opacity: 1;
@@ -765,4 +780,5 @@ figure.effect-marley:hover .productImage {
     transform: translate(-50%, -100%);
     font-size:1.5rem;
     font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
   }
