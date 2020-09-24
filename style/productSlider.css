@@ -65,7 +65,7 @@
   z-index: 1;
   top: 167px;
   left: -20px;
-  color: white;
+  color: black;
   height: 50px;
   font-size: 30px;
   cursor: pointer;
@@ -81,7 +81,7 @@
   visibility: visible;
   opacity: 1;
   left: 20px;
-  color:black;
+  color:white;
   /* background: url(../src/arrowLeft.png) top left;
   background-size: 70%;
     background-repeat: no-repeat; */
@@ -99,7 +99,7 @@
   top: 167px;
   right: -20px;
   font-size: 30px;
-  color: white;
+  color: black;
  
   height: 50px;
   visibility: hidden;
@@ -114,7 +114,7 @@
 .productImageholder .all .slider .right:hover {
   visibility: visible;
   opacity: 1;
-  color: black;
+  color: white;
   right: 20px;
   /* background: url(../src/arrowRight.png) top left;
   background-size: 70%;

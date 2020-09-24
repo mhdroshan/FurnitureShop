@@ -17,8 +17,11 @@
 
 
 
+
+
   <!-- googlefonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@700&family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@700&family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400&display=swap"
     rel="stylesheet">
 
   <!-- font awsome -->
@@ -27,9 +30,6 @@
 
 <body>
   <div class="navbarSticky">
-
-
-
     <div class="container ">
       <!-- navbar -->
       <nav class="navbar navbar-expand-md navbar-light ">
@@ -55,16 +55,56 @@
             <li class="nav-item">
               <a class="nav-link" href="./shop.html">PRODUCT</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown has-megamenu">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 ABOUT US
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown2" role="menu">
+
+                <div class="row m-auto">
+
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Two</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Three</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div>
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Four</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+
+                </div>
               </div>
             </li>
             <li class="nav-item">
@@ -111,59 +151,89 @@
 
 
     <div class="row">
-      <div class=" grid col-md-4 p-2" style="display: grid;">
-        <figure class="effect-marley ">
-          <img class="collImage diffHeight" src="./src/livingroom.png" alt="img11" />
-          <figcaption>
-            <h4>Living room</h4>
-            <div class="viewButton">View all</div>
+      <div class="  col-md-4 p-2 " style="display: grid;">
+        <div class="banner">
 
-          </figcaption>
-        </figure>
-        <figure class="effect-marley">
-          <img class="collImage" src="./src/office.jpg" alt="img11" />
-          <figcaption>
-            <h4>office</h4>
-            <div class="viewButton">View all</div>
+          <a href="#" class="product-img">
+            <div class="banimgHolder diffHeight" style="background-image: url(./src/livingroom.png);"></div>
+          </a>
+          <div class="prodBanner">Living room</div>
+          <div class="bannerOverlay">
+            Living room
+            <a href="#">View all</a>
 
-          </figcaption>
-        </figure>
+          </div>
+        </div>
+
+        <div class="banner">
+
+          <a href="#" class="product-img">
+            <div class="banimgHolder " style="background-image: url(./src/office.jpg);"></div>
+          </a>
+          <div class="prodBanner">office</div>
+          <div class="bannerOverlay">
+            office
+            <a href="#">View all</a>
+
+          </div>
+        </div>
+
       </div>
-      <div class=" grid col-md-4 p-2" style="display: grid;">
-        <figure class="effect-marley">
-          <img class="collImage " src="./src/bedroom.jpg" alt="img11" />
-          <figcaption>
-            <h4>Bed room</h4>
-            <div class="viewButton">View all</div>
+      <div class="  col-md-4 p-2 " style="display: grid;">
+        <div class="banner">
 
-          </figcaption>
-        </figure>
-        <figure class="effect-marley">
-          <img class="collImage diffHeight" src="./src/outdoor.jpg" alt="img11" />
-          <figcaption>
-            <h4>outdoor furniture</h4>
-            <div class="viewButton">View all</div>
+          <a href="#" class="product-img">
+            <div class="banimgHolder " style="background-image: url(./src/bedroom.jpg);"></div>
+          </a>
+          <div class="prodBanner">Bed room</div>
+          <div class="bannerOverlay">
+            Bed room
+            <a href="#">View all</a>
 
-          </figcaption>
-        </figure>
+          </div>
+        </div>
+
+        <div class="banner">
+
+          <a href="#" class="product-img">
+            <div class="banimgHolder diffHeight" style="background-image: url(./src/outdoor.jpg);"></div>
+          </a>
+          <div class="prodBanner">Outdoor furniture</div>
+          <div class="bannerOverlay">
+            Outdoor furniture
+            <a href="#">View all</a>
+
+          </div>
+        </div>
+
       </div>
-      <div class=" grid col-md-4 p-2" style="display: grid;">
-        <figure class="effect-marley">
-          <img class="collImage diffHeight" src="./src/dining.jpg" alt="img11" />
-          <figcaption>
-            <h4>Dining</h4>
-            <div class="viewButton">View all</div>
+      <div class="  col-md-4 p-2 " style="display: grid;">
+        <div class="banner">
 
-          </figcaption>
-        </figure>
-        <figure class="effect-marley">
-          <img class="collImage" src="./src/others2.jpg" alt="img11" />
-          <figcaption>
-            <h4>Others</h4>
-            <div class="viewButton">View all</div>
+          <a href="#" class="product-img">
+            <div class="banimgHolder diffHeight" style="background-image: url(./src/dining.jpg);"></div>
+          </a>
+          <div class="prodBanner">Dining</div>
+          <div class="bannerOverlay">
+            Dining
+            <a href="#">View all</a>
 
-          </figcaption>
-        </figure>
+          </div>
+        </div>
+
+        <div class="banner">
+
+          <a href="#" class="product-img">
+            <div class="banimgHolder" style="background-image: url(./src/others2.jpg);"></div>
+          </a>
+          <div class="prodBanner ">Others</div>
+          <div class="bannerOverlay">
+            Others
+            <a href="#">View all</a>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -456,99 +526,6 @@
   <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
-
-
-  <script>
-    $(document).ready(function () {
-      $('#testimonial').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        navClass: ['jislider__left-arrow', 'jislider__right-arrow'],
-        margin: 50,
-
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true
-          },
-          600: {
-            items: 2,
-            nav: false
-          },
-          1000: {
-            items: 2,
-            nav: true,
-
-          }
-        }
-      })
-    })
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      $('#featured').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        navClass: ['jislider__left-arrow', 'jislider__right-arrow'],
-        margin: 15,
-
-
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 2,
-            nav: false
-          },
-          600: {
-            items: 3,
-            nav: true
-          },
-          1000: {
-            items: 4,
-            nav: true,
-
-          }
-        }
-      })
-    })
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      $('#homeslider').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        margin: 2,
-        navClass: ['jislider__left-arrow', 'jislider__right-arrow'],
-        dotsClass: 'owl-dotsCustom owl-dots',
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true
-          },
-          600: {
-            items: 1,
-            nav: false
-          },
-          1000: {
-            items: 1,
-            nav: true,
-
-          }
-        }
-      })
-    })
-  </script>
-
-
   <script src="js/app.js"></script>
 
 
