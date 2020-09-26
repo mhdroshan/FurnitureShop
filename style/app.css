@@ -260,13 +260,16 @@ body {
 }
 
 /* another hover  */
+
 .banner a:visited {
     color: black;
     text-decoration: none;
 }
-.banner a:hover{
+
+.banner a:hover {
     text-decoration: none;
 }
+
 .prodBanner {
     position: absolute;
     bottom: 30px;
@@ -367,8 +370,6 @@ body {
 }
 
 .banimgHolder {
-    
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -394,8 +395,6 @@ body {
     -o-transition: all 900ms ease;
     transition: all 900ms ease;
 }
-
-
 
 .banner:hover .product-img:after {
     top: 0;
@@ -541,61 +540,6 @@ figure.effect-marley:hover .collImage {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-/* about */
-
-.aboutHolder {
-    margin: 5% auto;
-}
-
-.abtImageHolder {
-    padding: 5px;
-}
-
-.aboutImage {
-    background-image: url(../src/4.jpg);
-    height: 450px;
-    transition: .15s ease-in-out;
-    background-size: cover;
-}
-
-.aboutImage:hover {
-    filter: brightness(0.7);
-}
-
-.aboutContent {
-    padding: 20px;
-}
-
-.aboutContent p {
-    font-size: 21px;
-}
-
-.aboutContent h2 {
-    margin-bottom: 15px;
-}
-
-.aboutButton {
-    padding: 9px 23px;
-    color: white;
-    background-color: #1f1f1f;
-    transition: .2s ease-in-out;
-    border-radius: 6px;
-    text-align: center;
-    width: max-content;
-    margin: 15px;
-    letter-spacing: 1px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 1.5px solid #1f1f1f;
-    font-family: 'Lato', sans-serif;
-}
-
-.aboutButton:hover {
-    color: #1f1f1f;
-    background-color: white;
 }
 
 /* subscribe */
@@ -951,4 +895,16 @@ figure.effect-marley:hover .productImage {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* paralallax */
+
+.parHolder {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../src/dining.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
