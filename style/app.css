@@ -572,6 +572,26 @@ figure.effect-marley:hover .collImage {
 .subContent p {
     font-size: 15px;
 }
+.aboutButton {
+    padding: 9px 23px;
+    color: white;
+    background-color: #1f1f1f;
+    transition: .2s ease-in-out;
+    border-radius: 6px;
+    text-align: center;
+    width: max-content;
+    margin: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.aboutButton:hover {
+    color: #1f1f1f;
+    background-color: white;
+}
 
 /* footer */
 
@@ -816,7 +836,9 @@ figure.effect-marley:hover .productImage {
 }
 
 /* testimonials */
-
+.testimialHolder{
+    margin: 8% auto;
+}
 .testimonialSlide {
     height: 300px;
     padding: 30px;
