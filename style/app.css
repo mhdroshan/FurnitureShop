@@ -2,6 +2,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* media query */
+@media only screen and (max-width: 1025px) {
+    .aboutdataHolder h1{
+        font-size: 97px !important;
+    }
+  
+}
+@media only screen and (max-width: 544px) {
+    .aboutdataHolder h1{
+        font-size: 65px !important;
+    }
+  
+}
+
+
 /* navbar */
 
 @media all and (min-width: 992px) {
@@ -572,6 +587,7 @@ figure.effect-marley:hover .collImage {
 .subContent p {
     font-size: 15px;
 }
+
 .aboutButton {
     padding: 9px 23px;
     color: white;
@@ -836,9 +852,11 @@ figure.effect-marley:hover .productImage {
 }
 
 /* testimonials */
-.testimialHolder{
+
+.testimialHolder {
     margin: 8% auto;
 }
+
 .testimonialSlide {
     height: 300px;
     padding: 30px;
@@ -929,4 +947,169 @@ figure.effect-marley:hover .productImage {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* about.html */
+
+.aboutImage {
+    width: 100%;
+    height: 95vh;
+    background-image: url(../src/aboutUs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactForm {
+    height: 70%;
+    width: 100%;
+    max-width: 370px;
+    background-color: #871616;
+    box-shadow: 1px 1px 13px 4px #00000054;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.contactForm h3 {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.inputForm {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    margin: 10px auto;
+    background-color: #ffffffb8;
+    width: 95%;
+}
+
+.inputForm:focus {
+    outline: none;
+}
+
+input:focus~.floating-label, input:not(:focus):valid~.floating-label {
+    top: -6px;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 27px;
+    top: 20px;
+    opacity: .8;
+    font-size: 15px;
+    transition: 0.25s ease all;
+}
+
+.formButton {
+    text-align: center;
+    padding: 8px;
+    margin: 8px auto;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 140px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: .3s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.formButton:focus {
+    outline: none;
+}
+
+.formButton:hover {
+    color: black;
+    background-color: white;
+}
+.aboutdataHolder h1{
+    font-size: 140px;
+    font-weight: 900;
+    color: white;
+    margin: 10px auto;
+
+}
+.aboutdataHolder {
+    backdrop-filter: blur(2px);
+    margin: 8% auto;
+    width: max-content;
+    padding: 30px;
+    
+}
+.aboutdataHolder p{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 400px;
+    width: 100%;
+}
+.downButton{
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    color: white;
+    border: .8px solid white;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+    bottom: 30px;
+    
+
+}
+.downButton i{
+    bottom: 50%;
+    margin-bottom: -10px;
+    width: 20px;
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    height: 20px;
+}
+.updownanim{
+    animation-name: upandddown;
+    animation-iteration-count: infinite;
+    
+    animation-duration: .8s;
+    animation-direction: alternate;
+    position: absolute;
+}
+@keyframes upandddown{
+    0% {bottom: 42%;}
+    100% {bottom: 58%;}
+}
+.aboutwhyHolder{
+    margin: 8% auto;
+}
+.jusCenter{
+    display: flex;
+    justify-content: center;
+}
+.abouticonHolder{
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+}
+.abouticonHolder img{
+    width: 80px;
+    height: 80px;
 }

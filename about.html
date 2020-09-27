@@ -2,129 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/app.css">
+  <!-- css -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/app.css">
 
 
-    <!-- googlefonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@700&family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet"> -->
+  <!-- googlefonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@700&family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400&display=swap"
+    rel="stylesheet">
 
-    <!-- font awsome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- navigation -->
-    <div class="navbarSticky">
-        <div class="container ">
-          <!-- navbar -->
-          <nav class="navbar navbar-expand-md navbar-light ">
-    
-            <a class="navbar-brand" href="#">
-              <img class="logo" src="./src/logoLarge.jpg" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
-                <path class="line top"
-                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
-                <path class="line middle" d="m 70,50 h -40" />
-                <path class="line bottom"
-                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-              </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./shop.html">PRODUCT</a>
-                </li>
-                <li class="nav-item dropdown has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    ABOUT US
-                  </a>
-                  <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown2" role="menu">
-    
-                    <div class="row m-auto">
-    
-                      <div class="col-md-4">
-                        <div class="col-megamenu">
-                          <h6 class="title">Title Menu Two</h6>
-                          <ul class="list-unstyled">
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                          </ul>
-                        </div> <!-- col-megamenu.// -->
-                      </div><!-- end col-3 -->
-                      <div class="col-md-4">
-                        <div class="col-megamenu">
-                          <h6 class="title">Title Menu Three</h6>
-                          <ul class="list-unstyled">
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                          </ul>
-                        </div> <!-- col-megamenu.// -->
-                      </div>
-                      <div class="col-md-4">
-                        <div class="col-megamenu">
-                          <h6 class="title">Title Menu Four</h6>
-                          <ul class="list-unstyled">
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                            <li><a href="#">Custom Menu</a></li>
-                          </ul>
-                        </div> <!-- col-megamenu.// -->
-                      </div><!-- end col-3 -->
-    
-                    </div>
+  <!-- navigation -->
+  <div class="navbarSticky">
+    <div class="container ">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-light ">
+
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./src/logoLarge.jpg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+            <path class="line top"
+              d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path class="line bottom"
+              d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">PRODUCT</a>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                ABOUT US
+              </a>
+              <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown2" role="menu">
+
+                <div class="row m-auto">
+
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Two</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Three</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
-                </li>
-              </ul>
+                  <div class="col-md-4">
+                    <div class="col-megamenu">
+                      <h6 class="title">Title Menu Four</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+      <div class="bottomLine"></div>
+    </div>
+  </div>
+
+  <!-- about us -->
+
+  <div class="w-100">
+    <div class="aboutImage">
+      <div class="row m-0">
+        <div class="col-md-8">
+          <div class="aboutdataHolder">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro?
+              Iste, Et, esta ah consectetur elit. Ipsa voluptatum ipsum, laudantium minima aliquam porro? Iste, Et, esta
+              ah </p>
+          </div>
+
+        </div>
+        <div class="col-md-4 my-auto">
+          <div class="contactForm">
+            <h3>Get in touch with us</h3>
+            <div style="position: relative;">
+              <input class="inputForm" type="text" name="name" id="" required />
+              <span class="floating-label">your name</span>
             </div>
-    
-          </nav>
-          <div class="bottomLine"></div>
+            <div style="position: relative;">
+              <input class="inputForm" type="email" name="email" id="" required />
+              <span class="floating-label">email address</span>
+            </div>
+            <div style="position: relative;">
+              <input class="inputForm" type="tel" name="mobile" id="" required />
+              <span class="floating-label">mobile number</span>
+            </div>
+            <div class="formButton">Send</div>
+          </div>
+
         </div>
       </div>
 
-      <!-- about us -->
+      <div class="downButton"><i class="fa fa-chevron-down updownanim" aria-hidden="true"></i></div>
+    </div>
+  </div>
 
-      <div class="container">
-          <div class="row">
-              <div class="col-md-8">
-                  
-              </div>
-              <div class="col-md-4">
-                  
-              </div>
-          </div>
+  <!-- after image -->
+
+  <div class="container aboutwhyHolder">
+    <div class="collectionheader">
+      <h3 style="font-size: 26px;">Why us?</h3>
+    </div>
+    <div class="row">
+      <div  class="col-sm-4 jusCenter">
+        <div class="abouticonHolder">
+          <img src="./src/mealsicon.png" alt="" srcset="">
+        
+        </div>
+        <div class="abouticonHolder">
+          <img src="./src/shopicon.png" alt="" srcset="">
+        
+        </div>
+
       </div>
+      <div  class="col-sm-4 jusCenter">
+        <div class="abouticonHolder">
+          <img src="./src/restaurenticon.png" alt="" srcset="">
+        </div>
+        <div class="abouticonHolder">
+          <img src="./src/officeicon.png" alt="" srcset="">
+        </div>
+      </div>
+      <div  class="col-sm-4 jusCenter">
+        <div class="abouticonHolder">
+          <img src="./src/forntdesk.png" alt="" srcset="">
+        </div>
+        <div class="abouticonHolder">
+          <img src="./src/bedicon.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-       <!-- footer -->
+  <!-- footer -->
   <div class="footerholder">
     <div class="container">
       <div class="row">
