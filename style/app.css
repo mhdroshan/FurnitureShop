@@ -953,12 +953,14 @@ figure.effect-marley:hover .productImage {
 
 .aboutImage {
     width: 100%;
-    height: 95vh;
+    height: 100%;
+    min-height: 91vh;
     background-image: url(../src/aboutUs.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .contactForm {
@@ -970,6 +972,7 @@ figure.effect-marley:hover .productImage {
     padding: 15px;
     margin: 10px auto;
     border-radius: 4px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -1046,18 +1049,18 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
 
 }
 .aboutdataHolder {
-    backdrop-filter: blur(2px);
-    margin: 8% auto;
+    backdrop-filter: blur(1.5px);
+    margin: 3% auto;
     width: max-content;
-    padding: 30px;
+    padding: 30px 2%;
     
 }
 .aboutdataHolder p{
     color: white;
     padding: 10px;
     font-size: 18px;
-    max-width: 400px;
-    width: 100%;
+    max-width: 360px;
+    width: 90%;
 }
 .downButton{
     text-align: center;
@@ -1072,7 +1075,7 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     left: 50%;
     margin-left: -25px;
     cursor: pointer;
-    bottom: 30px;
+    bottom: 4%;
     
 
 }
