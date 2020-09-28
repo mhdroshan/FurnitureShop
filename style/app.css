@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -15,7 +19,6 @@ body {
     }
   
 }
-
 
 /* navbar */
 
@@ -954,7 +957,7 @@ figure.effect-marley:hover .productImage {
 .aboutImage {
     width: 100%;
     height: 100%;
-    min-height: 91vh;
+    min-height: 70vh;
     background-image: url(../src/aboutUs.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -1041,6 +1044,7 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     color: black;
     background-color: white;
 }
+
 .aboutdataHolder h1{
     font-size: 140px;
     font-weight: 900;
@@ -1076,8 +1080,20 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     margin-left: -25px;
     cursor: pointer;
     bottom: 4%;
+    transition: .3s ease;
     
 
+}
+.downButton:hover{
+    color: black;
+    background-color: white;
+}
+.downButton a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .downButton i{
     bottom: 50%;
@@ -1097,8 +1113,8 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     position: absolute;
 }
 @keyframes upandddown{
-    0% {bottom: 42%;}
-    100% {bottom: 58%;}
+    0% {bottom: 35%;}
+    100% {bottom: 60%;}
 }
 .aboutwhyHolder{
     margin: 8% auto;
