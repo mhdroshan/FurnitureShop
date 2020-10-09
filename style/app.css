@@ -9,13 +9,13 @@ body {
 /* media query */
 @media only screen and (max-width: 1025px) {
     .aboutdataHolder h1{
-        font-size: 97px !important;
+        font-size: 60px !important;
     }
   
 }
 @media only screen and (max-width: 544px) {
     .aboutdataHolder h1{
-        font-size: 65px !important;
+        font-size: 45px !important;
     }
   
 }
@@ -59,8 +59,10 @@ body {
 }
 
 .navbarSticky {
-    position: sticky;
+    position: fixed;
     top: 0px;
+    height: auto;
+    min-height: 100px;
     font-family: 'Source Sans Pro', sans-serif;
     z-index: 3;
     background: white;
@@ -252,6 +254,7 @@ body {
 .collectionheader h3 {
     font-size: 40px;
     text-align: center;
+    color: white;
     font-weight: 700;
     margin: 10px 10px 25px 10px;
     padding: 10px;
@@ -261,7 +264,7 @@ body {
 .collectionheader h3:after, .collectionheader h3:before {
     display: inline-block;
     content: "";
-    border-top: 1.5px solid black;
+    border-top: 1.5px solid white;
     width: 6%;
     margin: 0 1.2%;
     transform: translateY(-11px);
@@ -955,9 +958,10 @@ figure.effect-marley:hover .productImage {
 /* about.html */
 
 .aboutImage {
+    margin-top: 100px;
     width: 100%;
     height: 100%;
-    min-height: 70vh;
+    min-height: 88vh;
     background-image: url(../src/aboutUs.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -1046,16 +1050,17 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
 }
 
 .aboutdataHolder h1{
-    font-size: 140px;
+    font-size: 80px;
     font-weight: 900;
+    text-align: center;
     color: white;
     margin: 10px auto;
 
 }
 .aboutdataHolder {
-    backdrop-filter: blur(1.5px);
+    /* backdrop-filter: blur(1.5px); */
     margin: 3% auto;
-    width: max-content;
+    width: 100%;
     padding: 30px 2%;
     
 }
@@ -1063,8 +1068,8 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     color: white;
     padding: 10px;
     font-size: 18px;
-    max-width: 360px;
-    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 .downButton{
     text-align: center;
@@ -1116,9 +1121,7 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     0% {bottom: 35%;}
     100% {bottom: 60%;}
 }
-.aboutwhyHolder{
-    margin: 8% auto;
-}
+
 .jusCenter{
     display: flex;
     justify-content: center;
@@ -1131,4 +1134,17 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
 .abouticonHolder img{
     width: 80px;
     height: 80px;
+}
+.abouticonHolder p{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin: 10px auto;
+}
+.aboutHolder{
+    backdrop-filter: blur(2.5px);
+    min-height: 88vh;
+    height: 100%;
+    background-color: #0000007d;
+
 }
