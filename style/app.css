@@ -1067,8 +1067,10 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
 }
 
 .aboutDetHolder{
-   padding: 5%;
+  
     text-align: center;
+    MAX-WIDTH: 550px;
+    margin: 5% auto;
 }
 .aboutDetHolder h3{
     text-align: center;
