@@ -52,7 +52,9 @@ body {
     transition: background-color 0.2s ease-in, box-shadow 0.3s ease-in;
     /* box-shadow: none;*/
 }
-
+.navbar-brand {
+    padding: 0 15px;
+}
 .navbar .megamenu {
     padding: 0px 20px;
 }
