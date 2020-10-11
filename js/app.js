@@ -1,8 +1,97 @@
+
+
+// menu
+
+// function megaa(){
+
+//   $("#navbar").css("background", "white");
+//   $(".nav-link").css("color","black");
+//   // $(".navbar .show").css("background", "white");
+//   $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+
+
+  
+// }
+
+
+function myFunction() {
+  var scl = $(window).scrollTop();
+
+  if ($("#navbarNav").hasClass("show")) {
+    if (scl < 100) {
+      $("#navbar").css("background", "transparent");
+      $("#navbar").css("backdrop-filter", "none");
+      $("#navbar").css("box-shadow", "none");
+      $(".nav-link").css("color","white");
+     
+    }
+
+  }
+  else {
+    if (scl < 100) {
+      $("#navbar").css("background", "#ffffffbd");
+      $("#navbar").css("backdrop-filter", "blur(4px)");
+      $(".nav-link").css("color","black");
+
+      $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+    }
+  }
+}
+$(document).ready(function () {
+  var scroll2 = $(window).scrollTop();
+  if (scroll2 > 20) {
+    // document.getElementById("navbarNav").style.margin = "0px auto";
+    $("#navbar").css("background", "white");
+    $(".nav-link").css("color","black");
+    // $(".navbar .show").css("background", "white");
+    $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+
+  }
+
+  // if ($("#navbarNav").hasClass("show")) {
+  //   $("#navbar").css("background", "#ffffffbd");
+  //   $("#navbar").css("backdrop-filter", "blur(4px)");
+
+  // }
+
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+      // document.getElementById("navbarNav").style.margin = "0px auto";
+      $("#navbar").css("background", "white");
+      $(".nav-link").css("color","black");
+      // $(".navbar .show").css("background", "white");
+      $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+
+    }
+
+    else {
+      if ($("#navbarNav").hasClass("show")) {
+        $("#navbar").css("background", "#ffffffbd");
+        $(".nav-link").css("color","black");
+        $("#navbar").css("backdrop-filter", "blur(4px)");
+
+      }
+      else {
+        // document.getElementById("navbarNav").style.margin = "8px auto";
+        $("#navbar").css("background", "transparent");
+        $("#navbar").css("box-shadow", "none");
+        $("#navbar").css("backdrop-filter", "none");
+        $(".nav-link").css("color","white");
+
+        // $(".navbar .show").css("background", "#e8cb00c7");
+      }
+    }
+  })
+})
+
+
 // mega menu
   
     $(document).ready(function() {
      
         $(document).on('click', '.dropdown-menu', function (e) {
+         
           e.stopPropagation();
         });
         

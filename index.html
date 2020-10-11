@@ -29,94 +29,92 @@
 </head>
 
 <body>
-  <div class="navbarSticky">
-    <div class="container ">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-md navbar-light ">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="./index.html">
+        <img class="logo" src="./src/logoLarge.jpg" alt="logo">
+      </a>
+  <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+      <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+      <path class="line middle" d="m 70,50 h -40" />
+      <path class="line bottom"
+        d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+    </svg>
+  </button>
+  <!-- hamburger -->
 
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="./src/logoLarge.jpg" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
-            <path class="line top"
-              d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
-            <path class="line middle" d="m 70,50 h -40" />
-            <path class="line bottom"
-              d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-          </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./shop.html">PRODUCT</a>
-            </li>
-            <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                ABOUT US
-              </a>
-              <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown2" role="menu">
 
-                <div class="row m-auto">
 
-                  <div class="col-md-4">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Two</h6>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" style="color: white;" href="#">HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" style="color: white;" href="./shop.html">PRODUCT</a>
+        </li>
+        <li  class="nav-item dropdown has-megamenu">
+          <a  class="nav-link dropdown-toggle"  style="color: white;" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+          </a>
+          <div class="dropdown-menu megamenu " aria-labelledby="navbarDropdown2" role="menu">
+            <div class="container megadrop">
+            <div class="row m-auto">
+                    
+              <div class="col-sm-4 megaboxes">
+                <div class="col-megamenu">
+                  <h6 class="title">Title Menu Two</h6>
                       <ul class="list-unstyled">
-                        <li><a href="./about.html">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
+                          <li><a href="./about.html">Custom Menu</a></li>
+                          <li><a href="./about2.html">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
                       </ul>
-                    </div> <!-- col-megamenu.// -->
-                  </div><!-- end col-3 -->
-                  <div class="col-md-4">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Three</h6>
+                  </div>  <!-- col-megamenu.// -->
+              </div><!-- end col-3 -->
+              <div class="col-sm-4 megaboxes">
+                <div class="col-megamenu">
+                  <h6 class="title">Title Menu Three</h6>
                       <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
                       </ul>
-                    </div> <!-- col-megamenu.// -->
-                  </div>
-                  <div class="col-md-4">
-                    <div class="col-megamenu">
-                      <h6 class="title">Title Menu Four</h6>
+                  </div>  <!-- col-megamenu.// -->
+              </div>    
+              <div class="col-sm-4 megaboxes">
+                <div class="col-megamenu">
+                  <h6 class="title">Title Menu Four</h6>
                       <ul class="list-unstyled">
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
-                        <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
+                          <li><a href="#">Custom Menu</a></li>
                       </ul>
-                    </div> <!-- col-megamenu.// -->
-                  </div><!-- end col-3 -->
-
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
+                  </div>  <!-- col-megamenu.// -->
+              </div><!-- end col-3 -->
+          
+        </div>
         </div>
 
-      </nav>
-      <div class="bottomLine"></div>
-    </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="#">CONTACT</a>
+        </li>
+      </ul>
   </div>
+</nav>
   <!-- carousel -->
   <div class="carouselHolder">
     <div id="homeslider" class="owl-carousel owl-theme">
