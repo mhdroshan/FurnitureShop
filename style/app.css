@@ -128,10 +128,18 @@ body {
 }
 
 .megaboxes {
-    min-width: 300px;
-    padding: 15px 5px;
-}
+    min-width: 170px;
+    padding: 5px;
+    margin:5px auto;
+    width: 100%;
 
+}
+.col-megamenu .title{
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
 .logo {
     width: 125px;
     height: 70px;
@@ -311,6 +319,7 @@ body {
 .sliderImage {
     height: 100vh;
     width: 100%;
+    background-position:center;
     background-size: cover;
     background-image: url(../src/2.jpg);
     background-repeat: no-repeat;
@@ -1222,6 +1231,8 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     justify-content: center;
 }
 
+/* about us page */
+
 .abouticonHolder {
     margin: 5px auto;
     padding: 10px;
@@ -1240,9 +1251,46 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     margin: 10px auto;
 }
 
-.aboutHolder {
-    backdrop-filter: blur(2.5px);
-    min-height: 88vh;
+.aboutHolder{
+min-height: 340px;
+height: 100%;
+position: relative;
+/* padding: 5px; */
+margin: 5% auto;
+transition: .3s ease;
+box-shadow: 0px 0px 20px 0px #0000005e;
+}
+.abtImgHolder{
+    background-size: cover;
+    width: 100%;
+    min-height: 320px;
     height: 100%;
-    background-color: #0000007d;
+}
+.abtDataHolder{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+}
+.abtDataHolder h3{
+    text-align: center;
+    font-weight: 600;
+}
+.abtDataHolder p{
+    padding: 5px;
+    font-weight: 400;
+}
+.abtAfter{
+    background:rgb(199 0 0 / 32%);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width:  53vw;
+    width: 100%;
+    transition: .3s ease;
+    height: 100%;
+    content: "";
+    bottom: 0;
+    
 }
