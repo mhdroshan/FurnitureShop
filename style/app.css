@@ -52,9 +52,11 @@ body {
     transition: background-color 0.2s ease-in, box-shadow 0.3s ease-in;
     /* box-shadow: none;*/
 }
+
 .navbar-brand {
     padding: 0 15px;
 }
+
 .navbar .megamenu {
     padding: 0px 20px;
 }
@@ -71,10 +73,13 @@ body {
 .list-unstyled a {
     color: black;
 }
+.list-unstyled li{
+margin: 3px auto;
+}
 
 .list-unstyled a:hover {
     text-decoration: none;
-    color: orange;
+    color: #c80000;
 }
 
 .dropdown-toggle::after {
@@ -132,16 +137,17 @@ body {
 .megaboxes {
     min-width: 170px;
     padding: 5px;
-    margin:5px auto;
+    margin: 5px auto;
     width: 100%;
-
 }
-.col-megamenu .title{
+
+.col-megamenu .title {
     font-weight: 600;
     text-decoration: underline;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
+
 .logo {
     width: 125px;
     height: 70px;
@@ -241,8 +247,7 @@ body {
 .owl-dotsCustom {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    margin-left: -50px;
+    right: 2%;
     width: 100px;
 }
 
@@ -321,7 +326,7 @@ body {
 .sliderImage {
     height: 100vh;
     width: 100%;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-image: url(../src/2.jpg);
     background-repeat: no-repeat;
@@ -411,6 +416,7 @@ body {
 
 .bannerOverlay {
     display: none;
+    cursor: pointer;
 }
 
 .banner {
@@ -709,19 +715,54 @@ figure.effect-marley:hover .collImage {
 }
 
 .footerData {
-    margin: 40px auto;
+    margin: 25px auto;
+    text-align: center;
 }
 
-.footerData a {
+.collSingle a, .footerDiff a, .collQuick a {
     color: white;
     font-size: 14px;
+    text-align: center;
+    transition: .3s ease;
     display: block;
 }
 
-.footerData h5 {
+.footerLogoHolder {
+    text-align: center;
+    margin: 10% 10px;
+}
+
+.collSingle, .collQuick {
+    width: 100%;
+    transition: 0.3s ease;
+    padding: 10px;
+    max-width: 250px;
+    border-radius: 50px;
+    margin: 2px auto;
+}
+
+.footCollection h5, .footerDiff h5 {
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+}
+
+.collSingle:hover {
+    background-color: #f4f4f46b;
+    color: black;
+}
+
+.collSingle:hover a {
+    color: black;
+    letter-spacing: .7px;
+    text-decoration: none;
+}
+
+.collQuick:hover a {
+    letter-spacing: .7px;
+    text-decoration: none;
 }
 
 .footerData i {
@@ -1035,10 +1076,10 @@ figure.effect-marley:hover .productImage {
 .parHolder {
     width: 100%;
     height: 50vh;
-    background-image: url(../src/dining.jpg);
+    background-image: url(../src/parallax.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center 70%;
     background-repeat: no-repeat;
 }
 
@@ -1253,46 +1294,49 @@ input:focus~.floating-label, input:not(:focus):valid~.floating-label {
     margin: 10px auto;
 }
 
-.aboutHolder{
-min-height: 340px;
-height: 100%;
-position: relative;
-/* padding: 5px; */
-margin: 5% auto;
-transition: .3s ease;
-box-shadow: 0px 0px 20px 0px #0000005e;
+.aboutHolder {
+    min-height: 340px;
+    height: 100%;
+    position: relative;
+    /* padding: 5px; */
+    margin: 5% auto;
+    transition: .3s ease;
+    box-shadow: 0px 0px 20px 0px #0000005e;
 }
-.abtImgHolder{
+
+.abtImgHolder {
     background-size: cover;
     width: 100%;
     min-height: 320px;
     height: 100%;
 }
-.abtDataHolder{
+
+.abtDataHolder {
     width: 100%;
     height: 100%;
     padding: 10px;
-    
 }
-.abtDataHolder h3{
+
+.abtDataHolder h3 {
     text-align: center;
     font-weight: 600;
 }
-.abtDataHolder p{
+
+.abtDataHolder p {
     padding: 5px;
     font-weight: 400;
 }
-.abtAfter{
-    background:rgb(199 0 0 / 32%);
+
+.abtAfter {
+    background: rgb(199 0 0 / 32%);
     z-index: 3;
     position: absolute;
     top: 0;
     right: 0;
-    min-width:  53vw;
+    min-width: 53vw;
     width: 100%;
     transition: .3s ease;
     height: 100%;
     content: "";
     bottom: 0;
-    
 }
