@@ -240,7 +240,7 @@ margin: 3px auto;
 }
 
 .jislider__left-arrow:hover, .jislider__right-arrow:hover {
-    background-color: #579378;
+    background-color: #871616;
     color: white;
 }
 
@@ -366,7 +366,7 @@ margin: 3px auto;
     padding: 50px 20px;
     margin: auto;
 }
-.slidrDataHolder h3{
+.slidrDataHolder h5{
     text-transform: uppercase;
 }
 .slidrDataHolder h1{
