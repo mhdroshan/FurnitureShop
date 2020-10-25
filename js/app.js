@@ -90,7 +90,7 @@ $(document).ready(function () {
   
     $(document).ready(function() {
      
-        $(document).on('click', '.dropdown-menu', function (e) {
+        $(document).on('click', '#dropeDownMenu', function (e) {
          
           e.stopPropagation();
         });
