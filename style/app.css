@@ -22,6 +22,16 @@ body {
         font-size: 55px !important;
     }
 }
+@media only screen and (max-width: 800px) {
+    .slidrDataHolder h1 {
+        font-size: 45px !important;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .slidrDataHolder h1 {
+        font-size: 40px !important;
+    }
+}
 
 /* navbar */
 
@@ -324,13 +334,14 @@ margin: 3px auto;
 }
 
 #homeslider .item {
-    min-height: 75vh;
+    min-height: 70vh;
     width: 100%;
+    margin-top: -10px;
  
 }
 .sliderImage{
     min-height: 500px;
-    margin: 15% 30px;
+    margin: 13% 10px;
 }
 .forBackground{
     width: 100%;
@@ -339,7 +350,7 @@ margin: 3px auto;
 }
 .carouselImageHolder{
     margin: 5px;
-    margin-right: 10%;
+    
     padding: 10px;
     position: relative;
     min-height: 400px;
@@ -374,7 +385,7 @@ margin: 3px auto;
     font-size: 55px;
 }
 .slidButton{
-    padding: 10px 20px;
+    padding: 7px 14px;
     font-size: 17px;
     background-color: #871616;
     color: white;
@@ -898,22 +909,23 @@ figure.effect-marley .viewProduct {
     padding: 8px 13px;
     border-radius: 4px;
     font-size: 14px;
-    background-color: rgb(46, 45, 45);
+    background-color: #871616;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
-    width: 140px;
+    width: 120px;
     cursor: pointer;
+    border: .5px solid #871616;
 }
 
 figure.effect-marley .viewProduct:hover {
     background-color: white;
-    color: black;
+    color: #871616;
 }
 
 figure.effect-marley .viewProduct {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.3s ease-in-out;
     transition-delay: .15;
 }
 
@@ -933,7 +945,7 @@ figure.effect-marley:hover .productImage {
     display: block;
     min-height: 100%;
     height: 300px;
-    transition: 0.35s ease-in-out;
+    transition: 0.3s ease-in-out;
     transform-origin: center;
     min-width: 330px;
     width: 100%;
