@@ -33,7 +33,7 @@ function myFunction() {
       $("#navbar").css("backdrop-filter", "blur(4px)");
       $(".nav-link").css("color","black");
 
-      $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+      // $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
     }
   }
 }
@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("#navbar").css("background", "white");
     $(".nav-link").css("color","black");
     // $(".navbar .show").css("background", "white");
-    $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+    // $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
 
   }
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
       $("#navbar").css("background", "white");
       $(".nav-link").css("color","black");
       // $(".navbar .show").css("background", "white");
-      $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
+      // $("#navbar").css("box-shadow", "rgba(0, 0, 0, 0.64) 0px 4px 6px 0px");
 
     }
 
@@ -167,13 +167,14 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 4000,
     margin: 2,
+    
     navClass: ['jislider__left-arrow', 'jislider__right-arrow'],
     dotsClass: 'owl-dotsCustom owl-dots',
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: false
       },
       600: {
         items: 1,
@@ -181,7 +182,7 @@ $(document).ready(function () {
       },
       1000: {
         items: 1,
-        nav: true,
+        nav: false,
 
       }
     }
