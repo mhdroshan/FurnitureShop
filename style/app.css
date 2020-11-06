@@ -877,7 +877,7 @@ figure.effect-marley:hover .collImage {
 }
 
 .collSingle:hover a {
-    color: black;
+    color: white;
     letter-spacing: .7px;
     text-decoration: none;
 }
