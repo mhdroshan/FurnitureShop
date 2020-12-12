@@ -1,0 +1,221 @@
+.category-icon {
+  fill: #000000;
+  height: 100px;
+  margin-bottom: 5px;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  width: 60px;
+}
+
+.category {
+  color: red;
+}
+
+.category-icons-ul li {
+  color: red;
+}
+
+.category-section {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.highlighter {
+  background-color: red;
+}
+
+.custom-heading {
+  position: relative;
+  font-size: 15px;
+  color: #fb5849;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desktop-hero {
+  display: none;
+}
+
+/* 
+@media only screen and (min-width: 480px) {
+    .desktop-hero {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile-view {
+        display: none;
+    }
+} */
+
+/* offerings changed */
+
+.diffHeight {
+  height: 280px !important;
+}
+
+/* another hover  */
+
+.banner a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: none;
+}
+
+.prodBanner {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  transition: opacity 0.5s ease;
+  padding: 7px 7px 8px 8px;
+  background: #fff;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.banner:hover .bannerOverlay {
+  display: block;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  top: 40%;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 999;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  -o-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.bannerOverlay {
+  display: none;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 460px;
+  width: 100%;
+  color: white;
+  height: 100%;
+  margin-bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.bannerOverlay a {
+  display: block;
+  max-width: 110px;
+  background: #fff;
+  margin: auto;
+  margin-top: 25px;
+  padding: 0;
+  color: #000;
+  height: 30px;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.product-img:after {
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 50%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 10px 0;
+  opacity: 0;
+}
+
+.product-img:before {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  opacity: 0;
+  margin: 10px 0;
+  z-index: 99;
+}
+
+.banimgHolder {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: block;
+  min-height: 100%;
+  height: 380px;
+  transition: 0.35s ease-in-out;
+  transform-origin: center;
+  min-width: 100%;
+  font-weight: 600;
+  filter: brightness(0.8);
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner:hover .product-img:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transition: all 900ms ease;
+  -moz-transition: all 900ms ease;
+  -ms-transition: all 900ms ease;
+  -o-transition: all 900ms ease;
+  transition: all 900ms ease;
+}
+
+.banner:hover .product-img:after {
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: all 900ms ease;
+  -moz-transition: all 900ms ease;
+  -ms-transition: all 900ms ease;
+  -o-transition: all 900ms ease;
+  transition: all 900ms ease;
+}
+
+.banner:hover .prodBanner,
+.banner:hover .prodBanner {
+  opacity: 0;
+}
+
+/* hide and show both view */
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
